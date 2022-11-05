@@ -16,8 +16,6 @@ def pali():
         length = len(list)
         avr = summary / length
         print(avr)
-
-
-    except Exception as ex:
+   except Exception as ex:
         print(f'Error: {ex}')
 pali()

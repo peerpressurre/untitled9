@@ -1,21 +1,13 @@
-import statistics
-def pali():
+def dududu():
    try:
-        list = []
-        print('To break ')
-        text = 0
-        while True:
-                text = int(input('text->'))
-                if text > 0:
-                    list.append(text)
-                else:
-                    break
+       num = (input('num->'))
+       splitted = num.split()
+       integers = map(int, splitted)
+       length = len(splitted)
+       summary = sum(integers)
+       average = summary / length
+       print(f'Summary is: {summary}\nAverage is: {average}')
 
-
-        summary = sum(list)
-        length = len(list)
-        avr = summary / length
-        print(avr)
    except Exception as ex:
         print(f'Error: {ex}')
-pali()
+dududu()
